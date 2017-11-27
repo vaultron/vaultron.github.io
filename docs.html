@@ -155,18 +155,51 @@ i.arrow {
       <!-- END ##### INSTALLATION ##### -->
 
       
-      <!-- ##### Setting up passwords ##### -->
+      <!-- ##### Setting up Entries ##### -->
       <div class="subsection">
         <h5 class="subsection-head" onclick='show_div("set-entries-content", "set-entries-arrow")'> 
           Setting Up Entries <i id="set-entries-arrow" class="arrow"></i>
         </h5>
 
         <div id="set-entries-content" class="content" style="display: none;">
-          <p>To setup an account for a site first use the new-entries tab</p>
-          <img>img of step 1</img> 
+          <p>To setup an account for a site first fillout the New Entry tab. After submitted, entries will
+            appear in the main table.
+          </p>
+          <center><img src="image/new_entry.png" style="width:50%;"/></center>
+          <ul>
+            <li> <b>Website (NOT encrypted):</b> a title of the entry</li>
+            <li> <b>Username (NOT encrypted):</b> Arbitrary username for the site</li>
+            <li> <b>Password (encrypted):</b> Password for the site</li>
+            <li> <b>Notes (NOT encrypted):</b> Comments for the user are stored in the database file</li>
+          </ul>
         </div>
       </div>      
-      <!-- END ##### Setting up passwords ##### -->
+      <!-- END ##### Setting up Entries ##### -->
+
+      <!-- ##### Generating Passwords ##### -->
+      <div class="subsection">
+        <h5 class="subsection-head" onclick='show_div("gen-pass-content", "gen-pass-arrow")'> 
+          Generating Cryptographically Secure Passwords <i id="gen-pass-arrow" class="arrow"></i>
+        </h5>
+
+        <div id="gen-pass-content" class="content" style="display: none;">
+          <p>It is also possible to generate cryptographically secure passwords using our <i>Password Generator</i>
+            tool. We utilize the node <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/crypto">
+            Crypto Library</a> to follow a standard way for psuedo random number generation.
+          </p>
+          <center><img src="image/gen_pass.png" style="width:35%;"/></center>
+          <table class="w3-table-all ">
+            <tr><th>Option</th><th>Inluded Characters</th><th>Ascii Ranges</th></tr>
+            <tr><td>Numbers</td><td>0 - 9</td><td>{ 48 to 57 }</td></tr>
+            <tr><td>Lowercase</td><td>a - z</td><td>{ 65 to 90 }</td></tr>
+            <tr><td>Uppercase</td><td>A - Z</td><td>{ 97 to 122 }</td></tr>
+            <tr><td>Symbols</td><td>! to -, : to @, { to ~</td><td>{ 33 to 47 }, { 58 to 64 }, { 123 to 126 }</td></tr>
+          </table>
+          <p>To find exactly which characters these sets include check out <a href="http://www.theasciicode.com.ar/extended-ascii-code/graphic-character-low-density-dotted-ascii-code-176.html"> The Ascii Code</a>
+            
+        </div>
+      </div>      
+      <!-- END ##### Generating Passwords ##### -->
 
       
 
