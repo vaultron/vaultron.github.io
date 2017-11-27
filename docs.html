@@ -25,13 +25,20 @@ body {font-family: "Lato", sans-serif}
 
 .section-content{
   width: 100%;
-  background-color: #e5e5e5;
+  
   align-content: center;
 }
 
 .subsection{
-  background-color: #e5e5e5;
+  
 }
+
+.subsection-head{
+  background-color: #e5e5e5;
+  padding: 2px;
+  margin: auto;
+}
+
 .content{
   align-content: left;
   text-align: left;
@@ -118,8 +125,8 @@ i.arrow {
       <!-- ##### INSTALLATION ##### -->
       <div class="subsection">
         
-        <h5 onclick='show_div("install-content", "install-arrow")'> 
-          Installation  <i id="install-arrow" class="arrow"></i>
+        <h5 class="subsection-head" onclick='show_div("install-content", "install-arrow")'> 
+          Installation <i id="install-arrow" class="arrow"></i>
         </h5>
 
         <div id="install-content" class="content w3-padding-32" style="display: none;">
@@ -150,7 +157,7 @@ i.arrow {
       
       <!-- ##### Setting up passwords ##### -->
       <div class="subsection">
-        <h5 onclick='show_div("set-entries-content", "set-entries-arrow")'> 
+        <h5 class="subsection-head" onclick='show_div("set-entries-content", "set-entries-arrow")'> 
           Setting Up Entries <i id="set-entries-arrow" class="arrow"></i>
         </h5>
 
@@ -164,29 +171,11 @@ i.arrow {
       
 
     </div>
-    
   </div>
 
-
-  <!-- ============== API Section ============== -->
-  <div id="api-section" class="sections w3-center">
-
-    <!-- api Header -->
-    <div id="api-header" class="w3-grey" onclick='show_div("api-content","api-arrow")'>
-      <h3> API Reference <i id="api-arrow" class="arrow"></i> </h3>
-    </div>
-
-    <!-- api Content -->
-    <div id="api-content" class="section-content" style="display: none;">
-      here is content for the API documentation.
-
-
-    </div>
-    
-  </div>
 
   <!-- ============== Advanced Section ============== -->
-  <div id="adv-seciton" class="sections w3-center">
+  <div id="adv-section" class="sections w3-center">
 
     <!-- adv Header -->
     <div id="adv-header" class="w3-grey" onclick='show_div("adv-content","adv-arrow")'>
@@ -198,7 +187,7 @@ i.arrow {
 
       <!-- ##### Open source ##### -->
       <div class="subsection">
-        <h5 onclick='show_div("openSource-content", "openSource-arrow")'> 
+        <h5 class="subsection-head" onclick='show_div("openSource-content", "openSource-arrow")'> 
           Value of Open Source Software <i id="openSource-arrow" class="arrow"></i>
         </h5>
 
@@ -214,6 +203,21 @@ i.arrow {
         </div>
       </div>      
       <!-- END ##### open source ##### -->
+
+      <!-- ##### Security details ##### -->
+      <div class="subsection">
+        <h5 class="subsection-head" onclick='show_div("securityDetails-content", "securityDetails-arrow")'> 
+          Security Details <i id="securityDetails-arrow" class="arrow"></i>
+        </h5>
+
+        <div id="securityDetails-content" class="content" style="display: none;">
+          <p>Our code is using the <a href="https://en.wikipedia.org/wiki/PBKDF2">pbkdf2</a> 
+            key derivation function developped by RSA Laboratories because this algorithm
+            aims to reduce password vulnerability to brute force attacks.
+          </p>
+        </div>
+      </div>      
+      <!-- END ##### security details ##### -->
 
     </div>
     
