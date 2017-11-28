@@ -196,7 +196,7 @@ i.arrow {
             <tr><td>Symbols</td><td>! to -, : to @, { to ~</td><td>{ 33 to 47 }, { 58 to 64 }, { 123 to 126 }</td></tr>
           </table>
           <p>To find exactly which characters these sets include check out <a href="http://www.theasciicode.com.ar/extended-ascii-code/graphic-character-low-density-dotted-ascii-code-176.html"> The Ascii Code</a>
-            
+          <p> Output is generated in the text field and can be copied to the clipboard using the <i>COPY</i> button.
         </div>
       </div>      
       <!-- END ##### Generating Passwords ##### -->
@@ -251,6 +251,37 @@ i.arrow {
         </div>
       </div>      
       <!-- END ##### security details ##### -->
+
+      <!-- ##### Storage Details ##### -->
+      <div class="subsection">
+        <h5 class="subsection-head" onclick='show_div("storage-content", "storage-arrow")'> 
+          Storage Method <i id="storage-arrow" class="arrow"></i>
+        </h5>
+
+        <div id="storage-content" class="content" style="display: none;">
+          <p> All content for Vaultron is stored in a JSON file in appdata.
+          </p>
+
+          <p>Location On Mac:</p>
+          <code class="sourceCode code-cell w3-round">
+            ~/Library/Application\ Support/Electron/profiles/
+          </code>
+
+          <p>Location On Windows:</p>
+          <code class="sourceCode code-cell w3-round">
+            ???
+          </code>
+
+          <p>Location On Linux:</p>
+          <code class="sourceCode code-cell w3-round">
+            ???
+          </code>
+
+          <p>Here is an example of how content is stored.</p>
+          <center><img src="image/storage_example.png"></center>
+        </div>
+      </div>      
+      <!-- END ##### storage details ##### -->
 
     </div>
     
