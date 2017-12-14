@@ -15,6 +15,11 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+.button-sizing{
+    height: 80px;
+    line-height: 40px;
+    text-align: center;
+}
 </style>
 <body class="w3-black">
 
@@ -23,10 +28,13 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-    <a href="docs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOCUMENTATION</a>
-    <a href="https://github.com/vaultron/vaultron" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOWNLOAD</a>
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 button-sizing">
+        <img width="300px" src="image/VT_logo_3_white.png">
+    </a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-16 button-sizing">ABOUT</a>
+    <a href="docs.html" class="w3-bar-item w3-button w3-padding-16 button-sizing">DOCUMENTATION</a>
+    <a href="https://github.com/vaultron/vaultron" class="w3-bar-item w3-button w3-padding-16 button-sizing">DOWNLOAD</a>
     <!-- <a class="w3-bar-item w3-padding-large w3-hide-small"  style="float: right"><img src="vt-logo.png" style="width:20px;"></a> -->
   </div>
 </div>
@@ -38,11 +46,13 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content w3-center" style="max-width:2000px;margin-top:46px">
     <br>
     <div class="w3-display-container w3-center">
-        <img src="image/vt-logo.png" style="width:30%;">
+        <img src="image/header-background.png" style="width:100%;">
+        <!--
         <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
             <h2>VAULTRON</h2>
             <p"><b>Open Source Password Manager</b></p>   
         </div>
+        -->
 
     </div>
     <br><br><br>
@@ -53,7 +63,8 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
     <h2 class="w3-wide">KEEP YOUR VALUABLES IN THE VAULT</h2>
     <p class="w3-opacity"><i>The Secure Open Source Password Manager</i></p>
-    <p class="w3-justify">Vaultron is a javascript based password manager</p>
+    <p class="w3-justify">Vaultron is a cryptographically secure cross platform password manager written in electron and node.js which allows users to store their account information for websites locally with easy access. It will store hashed passwords in a JSON file for safe keeping. Vaultron will allow multiple profiles, each one will have a master password of its own that will unlock The Vault. This master password will let the user not only let them access their passwords, but also edit any information that is stored in The Vault. The master password will be created by the user so that they can remember it. Our password manager also allows the user to create and store strong and secure passwords that are created with our password generator. This allows the user to only need to remember the master password. 
+    </p>
   </div>
   
 <!-- End Page Content -->
