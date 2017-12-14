@@ -19,6 +19,12 @@ body {font-family: "Lato", sans-serif}
     line-height: 40px;
     text-align: center;
 }
+
+.code-cell{
+  background-color: #4c4c4c;
+  color: #e5e5e5;
+  padding: 10px;
+}
 </style>
 <body class="w3-black">
 
@@ -42,23 +48,54 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px; ">
 
   <!-- The About Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
-    <h2 class="w3-wide">ABOUT</h2>
-    <p class="w3-opacity"><i>The Secure Open Source Password Manager</i></p>
-    <p >Vaultron is an open source,javascript based password manager. It uses a secure password derivation function <a href="https://en.wikipedia.org/wiki/PBKDF2">(PBKDFv2)</a> to encrypt the user's password.
-      A large randomly generated master key is used to encrypt the contents of the users Vault. Vaultron allows users
-      to only need to remember one strong password while it generates and saves strong passwords for everything else.</p>
+  <div class="w3-container w3-content w3-center" style="padding-top: 5%; max-width:800px" id="about">
+    <h2 class="w3-wide">Why Manage Passwords?</h2>
+    <p class="w3-opacity"><i>Passwords are some of the most valuable and vulnerable digital content</i></p>
+    <p> first we must</p>
   </div>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  <!-- HOW TO Section -->
+  <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="about">
+    <h1 class="w3-wide">How to Use Vaultron?</h1>
+    <p> Securely managing passwords with Vaultron is as simple as downloading the software and hitting run.</p>
+
+    <div style="background-color: #999999;">
+      <h2>1. Install Dependancies</h2>
+      <p class="w3-opacity"><i>Setup required packages used by our software</i></p>
+    </div>
+    
+    <div style="background-color: #dddddd;">
+      <h2>2. Download/Clone the source code</h2>
+      <p class="w3-opacity"><i>Download our software</i></p>
+      <img src="image/vt-clone.png" style="width:50%">
+      <p> Use your desired method to download our software either by cloning the github repository to your local drive, or downloading via a zipped folder.</p>
+      <code class="sourceCode bash code-cell w3-round">
+              git clone https://github.com/vaultron/Vaultron.git
+      </code><br><br><br><br>
+    </div>
+
+    <div style="background-color: #999999;">
+      <h2>3. Setup Your Vaultron Account</h2>
+      <p class="w3-opacity"><i>Setup your master password used to encrypt all your valuable accounts</i></p>
+
+    </div>
+
+    <div style="background-color: #dddddd;">
+    <h2>4. Input Passwords</h2>
+      <p class="w3-opacity"><i>Simply input account information into the database</i></p>
+    </div>
+
+  </div>
 <!-- End Page Content -->
 </div>
 </div>
 
 
-<!-- Footer -->
+<!-- Footer 
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge" style="display: block;">
   <a href="https://github.com/vaultron/vaultron"> <i class="fa fa-github w3-hover-opacity" style="font-size:60px;"></i></a>
 </footer>
+-->
 
 </body>
 </html>
