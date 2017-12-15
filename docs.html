@@ -259,9 +259,16 @@ i.arrow {
         </h5>
 
         <div id="securityDetails-content" class="content" style="display: none;">
-          <p>Our code is using the <a href="https://en.wikipedia.org/wiki/PBKDF2">pbkdf2</a> 
+          <p>Vualtron is using the <a href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> 
             key derivation function developped by RSA Laboratories because this algorithm
-            aims to reduce password vulnerability to brute force attacks.
+            aims to reduce password vulnerability to brute force attacks. This algorithm
+            creates hard limit on how quickly passwords can be guess, this is because each
+            check takes around one second. This helps prevent brute force attacks on the
+            users master password. The password encryption is based around an implementation
+            of <a href="https://en.wikipedia.org/wiki/SHA-2">SHA-256</a> using a master key
+            that is decrypted from the users verified password. This means that until the user
+            inputs the correct password their is no quick (less than a couple year) way to
+            decrypt any of the password stored in Vaultron.
           </p>
         </div>
       </div>      
